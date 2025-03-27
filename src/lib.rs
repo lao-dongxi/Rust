@@ -68,3 +68,42 @@ pub fn notify7(s:&str)->impl Summary{
         content:String::from("The Pittsburgh Penguins once again are the best hockey team in the NHL."),
     }
 } 
+
+
+//学生管理
+pub trait Everyday {
+    fn eat(&self);
+    fn drink(&self);
+    fn gotoschool() {
+        println!("we go to school everyday");
+    }
+}
+pub struct Student{
+    name:String,
+    adress:String,
+    age:i32,
+}
+
+ impl Student {
+    pub fn playftb(&self) {
+        println!("We play football when free");
+    }
+    pub fn new(x:String,y:String,z:i32) ->Self{
+        Student { 
+            name: x, 
+            adress: y, 
+            age: z 
+        }
+    }
+}
+impl Everyday for Student {
+    fn drink(&self) {
+        println!("we drink milk when breakfast");
+    }
+    fn eat(&self) {
+        println!("we eat rice food when lunch")
+    }
+    fn gotoschool() {
+        
+    }
+}

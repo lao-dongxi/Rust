@@ -1,5 +1,59 @@
 use std::{clone, fmt::{Debug, Display}};
+use std::{env, fs, iter::Skip,process,{error::Error}};
 
+//grep代码单元
+pub fn run(config:Config)->Result<(),Box<dyn Error>> {
+    let contents=fs::read_to_string(config.filename)?;
+    for line  in search(&config.query, &contents)  {
+        println!("{}",line);
+    }
+    println!("with text:\n{}",contents);
+    Ok(())
+}
+
+pub struct Config{
+    pub query:String,
+    pub filename:String,
+}
+ impl Config {
+    pub fn new(args:&[String])->Result<Config,&str>{
+        if args.len()<3 {
+            return Err("argments is not enough!")
+        }
+        let config=Config{
+            query:args[1].clone(),
+            filename:args[2].clone(),
+        };
+        Ok(config)
+    }
+}
+
+pub fn search<'a>(query:&str,contents:&'a str)->Vec<&'a str> {
+    let mut results=Vec::new();
+    for line in contents.lines() {
+        if line.contains(query) {
+            results.push(line);
+        }
+    }
+    results
+}
+
+#[cfg(test)]
+mod tests{
+    use super::*;
+    #[test]
+    fn one_result() {
+        let query="duct";
+        let contents="\
+        Rust:
+        safe,fast,productive
+        pick three.";
+        assert_eq!(vec!["safe,fast,productive."],search(query,contents))
+    }
+}
+
+
+//trait练习
 pub trait Summary{
     // fn summarize(&self)->String;
     fn summarize_author(&self)->String;
@@ -107,3 +161,5 @@ impl Everyday for Student {
         
     }
 }
+
+

@@ -1,9 +1,8 @@
-
-fn largest<T:PartialOrd>(list:&[T])->&T{
-    let mut largest=&list[0];
-    for n in list{
-        if largest<n {
-            largest=n;           
+fn largest<T: PartialOrd>(list: &[T]) -> &T {
+    let mut largest = &list[0];
+    for n in list {
+        if largest < n {
+            largest = n;
         }
     }
     largest
@@ -24,12 +23,11 @@ impl<T, U> Point<T, U> {
 }
 
 fn main() {
-
-    let number=vec![34,50,25,100,65];
-    print!("{}",largest(&number));
+    let number = vec![34, 50, 25, 100, 65];
+    print!("{}", largest(&number));
 
     let p1 = Point { x: 5, y: 10.4 };
-    let p2 = Point { x: "Hello", y: 'c'};
+    let p2 = Point { x: "Hello", y: 'c' };
 
     let p3 = p1.mixup(p2);
 

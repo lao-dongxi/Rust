@@ -194,3 +194,18 @@ impl Everyday for Student {
     }
     fn gotoschool() {}
 }
+
+
+// module system
+
+pub use front_of_house::hosting;
+ mod front_of_house; 
+
+
+pub fn eat_at_restaurant() {
+    // 绝对路径
+    // crate::front_of_house::hosting::add_to_waitlist();
+    hosting::add_to_waitlist();
+    // 相对路径
+    // front_of_house::hosting::add_to_waitlist();
+}

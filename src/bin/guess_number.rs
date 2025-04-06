@@ -1,8 +1,8 @@
-use rand::Rng;
+use rand::random_range;
 use std::{cmp::Ordering, io};
 fn main() {
 
-    let secret_number=rand::random_range(1..101);
+    let secret_number=random_range(1..101);
     // println!("secret num is {}",secret_number);
 
     println!("Guess your number!");

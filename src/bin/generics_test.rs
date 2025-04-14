@@ -21,6 +21,10 @@ impl<T, U> Point<T, U> {
         }
     }
 }
+enum Option_num<T> {
+    Some(T),
+    None,
+}
 
 fn main() {
     let number = vec![34, 50, 25, 100, 65];
@@ -32,4 +36,9 @@ fn main() {
     let p3 = p1.mixup(p2);
 
     println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
+
+    let a=Option_num::Some(5.0);
+    let b=Option_num::Some(5);
+    let c=Some(8);
+
 }

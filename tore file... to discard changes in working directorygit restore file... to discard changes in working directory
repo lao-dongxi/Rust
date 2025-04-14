@@ -1,0 +1,101 @@
+[33mcommit 4bc7f5ac2d541f5d71941a8b1020e828a22899a6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31mrust/master[m[33m)[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sat Apr 12 18:54:13 2025 +0800
+
+    错误处理
+
+[33mcommit 4bf503db43f455cf4fe38d2c63b1d015a6fa390d[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Mon Apr 7 00:33:47 2025 +0800
+
+    total
+
+[33mcommit 8eccde69f991b61eed4b8d2bc9f914a7255ce60a[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Apr 6 21:54:48 2025 +0800
+
+    match
+
+[33mcommit 8fdbc391a73e324f74f71e094d557d6b58c2a909[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Wed Apr 2 00:39:55 2025 +0800
+
+    guess num
+
+[33mcommit 3c6f4413a68bf73c7ebf0c1fff06e85d456479e0[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Tue Apr 1 23:08:46 2025 +0800
+
+    0401
+
+[33mcommit b4687112242c40e0ec9ae01bba3cd60e78392c41[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Mon Mar 31 22:38:35 2025 +0800
+
+    third commit
+
+[33mcommit f5572a8dd54d5fe1073418e4660dfbb42ea0c811[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Mon Mar 31 19:23:35 2025 +0800
+
+    second commit
+
+[33mcommit 93c0cc14a7339ab9ed4dd2ffbbf8f367c026e071[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 30 23:53:53 2025 +0800
+
+    grep first
+
+[33mcommit 7ecb87b7dea64ed64444b5bbc1feac2f4e5e0c3f[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 30 21:01:14 2025 +0800
+
+    gcd
+
+[33mcommit 8898565cfa5ea4b707945be7e5cab26daf36781c[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Thu Mar 27 23:59:36 2025 +0800
+
+    Student
+
+[33mcommit 2585d39b52666d7bef86c31802f08a596e3abb30[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Wed Mar 26 23:44:19 2025 +0800
+
+    0326
+
+[33mcommit fa75dd35f5a4f01a0737bf1d2ee54f4ec038d893[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Mon Mar 24 23:53:01 2025 +0800
+
+    panic-result commit
+
+[33mcommit cd3f235149618b4fd3591c3c933e4652e362dd49[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Mon Mar 24 22:24:54 2025 +0800
+
+    vec-string-hashmap
+
+[33mcommit 94c74dba3b60bc6aa7013792ca8268c9c6cc2cc5[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 23 17:30:44 2025 +0800
+
+    fourth-commit
+
+[33mcommit f60189416fb0cdde178d69a82799d5a8c771df08[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 23 16:55:49 2025 +0800
+
+    third commit
+
+[33mcommit 099a36b91eec336d92da2eb9341a8771e843d8ee[m[33m ([m[1;32mhot-fix[m[33m)[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 23 10:53:29 2025 +0800
+
+    second commit
+
+[33mcommit dbad72c4c7bb0d495be58da4ad073a3c0bbfbd18[m
+Author: qifu2022 <qifu2022@gmail.com>
+Date:   Sun Mar 23 10:41:14 2025 +0800
+
+    first commit

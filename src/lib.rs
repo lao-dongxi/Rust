@@ -95,6 +95,10 @@ pub trait Summary {
     fn summarize(&self) -> String {
         format!("(Read more from {}...)", self.summarize_author())
     }
+    fn summarize_data(&self) -> String {
+        format!("(Read more from {}...)", self.summarize_author())
+    }
+    
 }
 pub struct NewsArticle {
     pub headline: String,
@@ -126,6 +130,8 @@ impl Summary for Tweet {
         format!("@{}", self.username)
     }
 }
+
+
 pub fn notify(item1: impl Summary, item2: impl Summary) {
     println!("Breaking news! {}", item1.summarize());
 }

@@ -2,6 +2,48 @@ use std::fmt::Display;
 
 fn main() {
     let u = user { part: "asdasd" };
+    
+    let r;
+    
+    let x:u32=5;
+    r=&x;
+    
+    println!("r: {}", r);
+
+
+    let s1=String::from("545");
+    let s2="231231";
+
+    
+
+    let s3=largernum(s1.as_str(), s2);
+    println!("{}",s3);
+
+    let s4=String::from("long string is long");
+    let result;
+    {
+        let s5= "xyz";
+        result=largernum(s4.as_str(), s5);
+    }
+    println!("{}",result);
+
+    fn largernum<'a>(x:&'a str,y:&'a str) ->&'a str{
+        if x.len()>y.len() {
+            x
+        }
+        else {
+            y
+        }
+
+    }
+
+    fn longest<'a>(x:&str,y:&str) ->String{
+            // let x=5;
+            // &'a x
+            let result = String::from("really long string");
+            result
+    }
+
 }
 impl<'a> user<'a> {
     fn level(&self) -> i32 {
